@@ -1,5 +1,4 @@
 package com.example.coursework2.service.impl;
-
 import com.example.coursework2.exception.QuestionAlreadyExistsException;
 import com.example.coursework2.exception.QuestionNotFoundException;
 import com.example.coursework2.exception.QuestionsAreEmptyException;
@@ -9,7 +8,6 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 
 
@@ -45,7 +43,8 @@ public class JavaQuestionServiceTest {
     @Test
     public void add2Test() {
         int beforeCount = questionService.getAll().size();
-        Question question = new Question("Q4", "А4");
+
+        Question question = new Question("Q4", "A4");
 
 
         Assertions.assertThat(questionService.add("Q4", "A4"))
