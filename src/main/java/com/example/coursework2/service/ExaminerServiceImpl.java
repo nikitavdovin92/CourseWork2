@@ -1,4 +1,5 @@
 package com.example.coursework2.service;
+
 import com.example.coursework2.exception.IncorrectAmountOfQuestions;
 import com.example.coursework2.model.Question;
 import org.springframework.stereotype.Service;
